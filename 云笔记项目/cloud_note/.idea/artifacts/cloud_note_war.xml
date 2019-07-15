@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="cloud_note:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>cloud_note</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="cloud_note-0.0.1-SNAPSHOT.war">
+      <element id="artifact" artifact-name="cloud_note:war exploded" />
+    </root>
+  </artifact>
+</component>
