@@ -7,16 +7,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c5e0ea96-8793-4780-96de-d9fac9dc3a27" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_fileupload_commons_fileupload_1_2_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_1_3_2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/cloud_note_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/cloud_note_war_exploded.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud_note.iml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud_note.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/conf/spring_mvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/conf/spring_mvc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/conf/spring_mvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/conf/spring_mvc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/log_in.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/log_in.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/styles/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/styles/login.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/cloud_note-0.0.1-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/cloud_note-0.0.1-SNAPSHOT.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cloud_note-0.0.1-SNAPSHOT/WEB-INF/classes/conf/spring_mvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/cloud_note-0.0.1-SNAPSHOT/WEB-INF/classes/conf/spring_mvc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cloud_note-0.0.1-SNAPSHOT/log_in.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cloud_note-0.0.1-SNAPSHOT/log_in.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cloud_note-0.0.1-SNAPSHOT/styles/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/cloud_note-0.0.1-SNAPSHOT/styles/login.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -218,6 +214,7 @@
       <workItem from="1563350563828" duration="1184000" />
       <workItem from="1564110371458" duration="5968000" />
       <workItem from="1564213403044" duration="1285000" />
+      <workItem from="1564214752910" duration="1456000" />
     </task>
     <task id="LOCAL-00001" summary="本地能跑">
       <created>1562914783696</created>

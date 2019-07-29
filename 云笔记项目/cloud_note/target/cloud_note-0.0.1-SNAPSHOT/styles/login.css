@@ -120,7 +120,7 @@ input[type=text],input[type=password]{
 	border-radius:3px;
 	letter-spacing:0.01em;
 }
-input[type=button]{
+input[type=button],input[type=submit]{
 	width:120px;
 	height:30px;
 	border:1px solid #13A89E;
@@ -131,10 +131,11 @@ input[type=button]{
 	margin-left:120px;
 	transition:all 0.4s;
 }
-input[type=button]:hover{
+input[type=button],input[type=submit]:hover{
 	background:#13A89E;
 	color:#fff;
 }
+
 .letter,.password{
 	color:#13A89E;
 	text-indent:4em;
