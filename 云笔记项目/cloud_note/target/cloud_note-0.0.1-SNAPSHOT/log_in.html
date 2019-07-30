@@ -1,117 +1,53 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>云笔记</title>
-<link rel="stylesheet" href="styles/login.css"/><!-- 样式css文件 -->
-<script type="text/javascript" 	src="scripts/common/jquery.min.js"></script> <!-- 引入jquery框架 -->
-<script type="text/javascript" src="scripts/base.js"></script> <!-- 引入项目的访问路径 -->
-<script type="text/javascript" src="scripts/cookie_util.js"></script><!-- 引入cookie -->
-<script type="text/javascript" src="scripts/login.js"></script><!-- 引入登录和注册的处理 -->
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>云笔记</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css">
+	<link rel="stylesheet" type="text/css" href="styles/login.css">
+	<link rel="stylesheet" type="text/css" href="styles/util.css">
 </head>
 	<body>
-		<div class="global">
-			<form action="/user/login.do" method="post">
-				<!-- 登录页面（显示） -->
-				<div class="log log_in" tabindex='-1' id='dl'>
-					<dl>
-						<dt>
-							<div class='header'>
-								<h3>登&nbsp;录</h3>
+		<div class="limiter">
+			<div class="container-login100" style="background-image: url('images/bg-01.jpg');">
+				<div class="wrap-login100 p-l-55 p-r-55 p-t-65 p-b-54">
+					<form class="login100-form validate-form">
+						<span class="login100-form-title p-b-49">登录</span>
+	
+						<div class="wrap-input100 validate-input m-b-23" data-validate="请输入用户名">
+							<span class="label-input100">用户名</span>
+							<input class="input100" type="text" name="username" placeholder="请输入用户名" autocomplete="off">
+							<span class="focus-input100" data-symbol="&#xf206;"></span>
+						</div>
+	
+						<div class="wrap-input100 validate-input" data-validate="请输入密码">
+							<span class="label-input100">密码</span>
+							<input class="input100" type="password" name="pass" placeholder="请输入密码">
+							<span class="focus-input100" data-symbol="&#xf190;"></span>
+						</div>
+	
+						<div class="text-right p-t-8 p-b-31">
+							<a href="javascript:">忘记密码？</a>
+						</div>
+	
+						<div class="container-login100-form-btn">
+							<div class="wrap-login100-form-btn">
+								<div class="login100-form-bgbtn"></div>
+								<button class="login100-form-btn">登 录</button>
 							</div>
-						</dt>
-						<dt></dt>
-						<dt>
-							<div class='letter'>
-								用户名:&nbsp;<input type="text" name="name" id="count" tabindex='1'/>
-								<span id="count_span"></span>
-							</div>
-						</dt>
-						<dt>
-							<div class='letter'>
-								密&nbsp;&nbsp;&nbsp;码:&nbsp;<input type="password" name="password" id="password" tabindex='2'/>
-								<span id="password_span"></span>
-							</div>
-						</dt>
-						<dt>
-							<div>
-								<input type="button" name="" id="login" value='&nbsp登&nbsp录&nbsp' tabindex='3'/>
-								<input type="button" name="" id="sig_in" value='&nbsp注&nbsp册&nbsp' tabindex='4'/>
-							</div>
-						</dt>
-					</dl>
+						</div>
+						<div class="flex-col-c p-t-25">
+							<a href="javascript:" class="txt2">立即注册</a>
+						</div>
+					</form>
 				</div>
-			</form>
-			
-			<!-----------------------------------分割线-------------------------------- -->
-			
-			<!-- 注册页面（隐藏） -->
-			<div class="sig sig_out" tabindex='-1' id='zc' style='visibility:hidden;'>
-				<dl>
-					<dt>
-						<div class='header'>
-							<h3>注&nbsp;册</h3>
-						</div>
-					</dt>
-					<dt></dt>
-					<dt>
-						<div class='letter'>
-							用户名:&nbsp;<input type="text" name="" id="regist_username" tabindex='5'/>
-							<div class='warning' id='warning_1'><span>该用户名不可用</span></div>
-						</div>
-					</dt>
-					<dt>
-						<div class='letter'>
-							昵&nbsp;&nbsp;&nbsp;称:&nbsp;<input type="text" name="" id="nickname" tabindex='6'/>
-						</div>
-					</dt>
-					<dt>
-						<div class='letter'>
-							密&nbsp;&nbsp;&nbsp;码:&nbsp;<input type="password" name="" id="regist_password" tabindex='7'/>
-							<div class='warning' id='warning_2'><span>密码长度不能小于6位</span></div>
-						</div>
-					</dt>
-					<dt>
-						<div class='password'>
-							&nbsp;&nbsp;&nbsp;确认密码:&nbsp;<input type="password" name="" id="final_password" tabindex='8'/>
-							<div class='warning' id='warning_3'><span>密码输入不一致</span></div>
-						</div>
-					</dt>
-					<dt>
-						<div>
-							<input type="button" name="" id="regist_button" value='&nbsp注&nbsp册&nbsp' tabindex='9'/>
-							<input type="button" name="" id="back" value='&nbsp返&nbsp回&nbsp' tabindex='10'/>
-							<!----------------------------分割线（将注册页面显示，登录页面隐藏）----------------------- -->
-							<script type="text/javascript">
-							function get(e){
-								return document.getElementById(e);
-							}
-							get('sig_in').onclick=function(){
-								get('dl').className='log log_out';
-								get('zc').className='sig sig_in';
-							}
-							get('back').onclick=function(){
-								get('zc').className='sig sig_out';
-								get('dl').className='log log_in';
-							}
-							window.onload=function(){
-								var t =setTimeout("get('zc').style.visibility='visible'",800);
-								get('regist_username').onfocus=function(){
-									get('warning_1').style.display='none';
-								}
-								get('regist_password').onfocus=function(){
-									get('warning_2').style.display='none';
-								}
-								get('final_password').onfocus=function(){
-									get('warning_3').style.display='none';
-								}
-							}
-							</script>
-						</div>
-					</dt>
-				</dl>
 			</div>
-		
 		</div>
+
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+	<script src="scripts/login.js"></script>
 	</body>
 </html>

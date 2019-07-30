@@ -7,9 +7,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c5e0ea96-8793-4780-96de-d9fac9dc3a27" name="Default Changelist" comment="Upgrade com.fasterxml.jackson.core:jackson-databind to version 2.9.9 or later">
-      <change beforePath="$PROJECT_DIR$/target/classes/conf/spring_mybatis.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/conf/spring_mybatis.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/change_password.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/change_password.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/edit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/log_in.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/log_in.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/scripts/base.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/scripts/base.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/scripts/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/scripts/login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/scripts/note.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/scripts/note.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/scripts/notebook.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/scripts/notebook.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/styles/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/styles/login.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/cloud_note-0.0.1-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/cloud_note-0.0.1-SNAPSHOT.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cloud_note-0.0.1-SNAPSHOT/WEB-INF/classes/conf/spring_mybatis.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/cloud_note-0.0.1-SNAPSHOT/WEB-INF/classes/conf/spring_mybatis.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cloud_note-0.0.1-SNAPSHOT/change_password.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cloud_note-0.0.1-SNAPSHOT/change_password.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cloud_note-0.0.1-SNAPSHOT/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cloud_note-0.0.1-SNAPSHOT/edit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cloud_note-0.0.1-SNAPSHOT/log_in.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cloud_note-0.0.1-SNAPSHOT/log_in.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cloud_note-0.0.1-SNAPSHOT/scripts/base.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/cloud_note-0.0.1-SNAPSHOT/scripts/base.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cloud_note-0.0.1-SNAPSHOT/scripts/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/cloud_note-0.0.1-SNAPSHOT/scripts/login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cloud_note-0.0.1-SNAPSHOT/scripts/note.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/cloud_note-0.0.1-SNAPSHOT/scripts/note.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cloud_note-0.0.1-SNAPSHOT/scripts/notebook.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/cloud_note-0.0.1-SNAPSHOT/scripts/notebook.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cloud_note-0.0.1-SNAPSHOT/styles/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/cloud_note-0.0.1-SNAPSHOT/styles/login.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -213,6 +229,8 @@
       <workItem from="1564213403044" duration="1285000" />
       <workItem from="1564214752910" duration="1456000" />
       <workItem from="1564473536639" duration="328000" />
+      <workItem from="1564474340387" duration="4000" />
+      <workItem from="1564474557776" duration="91000" />
     </task>
     <task id="LOCAL-00001" summary="本地能跑">
       <created>1562914783696</created>
