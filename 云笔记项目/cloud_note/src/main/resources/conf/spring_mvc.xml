@@ -13,6 +13,7 @@
 	<mvc:annotation-driven/>
 	<mvc:default-servlet-handler/>
 
+
 	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 		<property name="viewClass" value="org.springframework.web.servlet.view.JstlView" />
 		<property name="prefix" value="/WEB-INF/views/"/>
@@ -24,6 +25,9 @@
 		<property name="maxUploadSize" value="20971520" />
 		<property name="defaultEncoding" value="utf-8" />
 	</bean>
+
+
+
 </beans>
 
 

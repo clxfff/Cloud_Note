@@ -13,10 +13,10 @@
             else {
                 $(this).removeClass('has-val');
             }
-        })    
+        })
     })
-  
-  
+
+
     /*==================================================================
     [ Validate ]*/
     var input = $('.validate-input .input100');
@@ -65,7 +65,111 @@
 
         $(thisAlert).removeClass('alert-validate');
     }
-    
-    
+
+
 
 })(jQuery);
+
+/**
+ * 页面初始化后，绑定函数。
+ */
+$(function(){
+	
+	//登录
+	$("#login").click(function(){
+		login();
+	});
+	
+});
+
+
+
+//登陆
+function login() {
+	var username = $("#username").val();
+	var password = $("#password").val();
+	if(username=="" || password=="") {
+		return;
+	}
+	$.ajax({
+		type:"POST",
+		url:basePath+"user/login.do",
+		dataType:"json",
+		data:{"name":username,"password":password},
+		success: function(result) {
+			console.log(result);
+			if(result.status==0) {
+					//登陆成功，进入系统
+					location.href="edit.html";
+					addCookie("userId",result.data.cn_user_id,5);
+					addCookie("userName",result.data.cn_user_name,5);
+					alert(result.msg);
+			} else {
+				alert(result.msg);
+			}
+		},
+		error:function(xhr,status,error) {
+			alert("请求失败.");
+		}
+	});
+}
+
+/**
+ * 退出登录
+ */
+// function logout(){
+// 	//注销登陆信息
+// 	$.ajax({
+// 		type:"post",
+// 		url:basePath+"user/logout.do",
+// 		dataType:"json",
+// 		data:{},
+// 		success:function(result) {
+// 			if(result.status==0) {
+// 				//退回到登陆页
+// 				location.href="login.html";
+// 			} else {
+// 				alert(result.message);
+// 			}
+// 		},
+// 		error:function(xhr,status,error) {
+// 			alert("请求失败.");
+// 		}
+// 	});
+// }
+
+/**
+ * 修改密码
+ */
+// function changepwd(){
+// 	var newPassword = $("#new_password").val();
+// 	var finalPassword = $("#final_password").val();
+// 	if(newPassword.length < 6) {
+// 		alert("密码长度不能小于6位.");
+// 		return;
+// 	} else if(newPassword != finalPassword) {
+// 		alert("两次输入的新密码不一致.");
+// 		return;
+// 	}
+//
+// 	var lastPassword = $("#last_password").val();
+// 	$.ajax({
+// 		type:"post",
+// 		url:basePath+"user/changePassword.do",
+// 		dataType:"json",
+// 		data:{"lastPassword":lastPassword,"newPassword":newPassword},
+// 		success:function(result) {
+// 			if(result.status==0) {
+// 				alert(result.data);
+// 				logout();
+// 			} else {
+// 				alert(result.message);
+// 			}
+// 		},
+// 		error:function(xhr,status,error) {
+// 			alert("请求失败.");
+// 		}
+// 	});
+// }
+
+
