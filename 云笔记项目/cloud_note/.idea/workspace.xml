@@ -7,62 +7,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c5e0ea96-8793-4780-96de-d9fac9dc3a27" name="Default Changelist" comment="Upgrade com.fasterxml.jackson.core:jackson-databind to version 2.9.9 or later">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_jstl_1_1_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_5_1_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/edit.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/cloud_note_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/cloud_note_war_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_4_1_8_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_1_5_RELEASE.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_4_1_8_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_1_5_RELEASE.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_4_1_8_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_1_5_RELEASE.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_4_1_8_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_5_1_5_RELEASE.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_4_1_8_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_1_5_RELEASE.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_4_1_8_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_1_5_RELEASE.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jms_4_1_8_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jms_5_1_5_RELEASE.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_messaging_4_1_8_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_messaging_5_1_5_RELEASE.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_4_1_8_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_5_1_5_RELEASE.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_4_1_8_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_1_5_RELEASE.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_4_1_8_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_5_1_5_RELEASE.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud_note.iml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud_note.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lcz/cloud_note/controller/UserLoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lcz/cloud_note/controller/UserLoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lcz/cloud_note/controller/UserRegisterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lcz/cloud_note/controller/UserRegisterController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lcz/cloud_note/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lcz/cloud_note/service/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/conf/spring_mvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/conf/spring_mvc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/change_password.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/change_password.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/log_in.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/log_in.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/register.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/scripts/base.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/scripts/base.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/scripts/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/scripts/login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lcz/cloud_note/controller/UserLoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lcz/cloud_note/controller/UserLoginController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lcz/cloud_note/controller/UserRegisterController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lcz/cloud_note/controller/UserRegisterController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lcz/cloud_note/service/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lcz/cloud_note/service/UserServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/conf/spring_mvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/conf/spring_mvc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/scripts/register.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/scripts/register.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/cloud_note-0.0.1-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/cloud_note-0.0.1-SNAPSHOT.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cloud_note-0.0.1-SNAPSHOT/WEB-INF/classes/com/lcz/cloud_note/controller/UserLoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/cloud_note-0.0.1-SNAPSHOT/WEB-INF/classes/com/lcz/cloud_note/controller/UserLoginController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cloud_note-0.0.1-SNAPSHOT/WEB-INF/classes/com/lcz/cloud_note/controller/UserRegisterController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/cloud_note-0.0.1-SNAPSHOT/WEB-INF/classes/com/lcz/cloud_note/controller/UserRegisterController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cloud_note-0.0.1-SNAPSHOT/WEB-INF/classes/com/lcz/cloud_note/service/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/cloud_note-0.0.1-SNAPSHOT/WEB-INF/classes/com/lcz/cloud_note/service/UserServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cloud_note-0.0.1-SNAPSHOT/WEB-INF/classes/conf/spring_mvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/cloud_note-0.0.1-SNAPSHOT/WEB-INF/classes/conf/spring_mvc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cloud_note-0.0.1-SNAPSHOT/WEB-INF/lib/aopalliance-1.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cloud_note-0.0.1-SNAPSHOT/WEB-INF/lib/commons-logging-1.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cloud_note-0.0.1-SNAPSHOT/WEB-INF/lib/spring-aop-4.1.8.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cloud_note-0.0.1-SNAPSHOT/WEB-INF/lib/spring-beans-4.1.8.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cloud_note-0.0.1-SNAPSHOT/WEB-INF/lib/spring-context-4.1.8.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cloud_note-0.0.1-SNAPSHOT/WEB-INF/lib/spring-core-4.1.8.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cloud_note-0.0.1-SNAPSHOT/WEB-INF/lib/spring-expression-4.1.8.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cloud_note-0.0.1-SNAPSHOT/WEB-INF/lib/spring-jdbc-4.1.8.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cloud_note-0.0.1-SNAPSHOT/WEB-INF/lib/spring-jms-4.1.8.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cloud_note-0.0.1-SNAPSHOT/WEB-INF/lib/spring-messaging-4.1.8.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cloud_note-0.0.1-SNAPSHOT/WEB-INF/lib/spring-tx-4.1.8.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cloud_note-0.0.1-SNAPSHOT/WEB-INF/lib/spring-web-4.1.8.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cloud_note-0.0.1-SNAPSHOT/WEB-INF/lib/spring-webmvc-4.1.8.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cloud_note-0.0.1-SNAPSHOT/change_password.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cloud_note-0.0.1-SNAPSHOT/change_password.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cloud_note-0.0.1-SNAPSHOT/log_in.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cloud_note-0.0.1-SNAPSHOT/log_in.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cloud_note-0.0.1-SNAPSHOT/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cloud_note-0.0.1-SNAPSHOT/register.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cloud_note-0.0.1-SNAPSHOT/scripts/base.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/cloud_note-0.0.1-SNAPSHOT/scripts/base.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cloud_note-0.0.1-SNAPSHOT/scripts/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/cloud_note-0.0.1-SNAPSHOT/scripts/login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cloud_note-0.0.1-SNAPSHOT/scripts/register.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/cloud_note-0.0.1-SNAPSHOT/scripts/register.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -287,7 +235,7 @@
       <workItem from="1564474557776" duration="1194000" />
       <workItem from="1564475789668" duration="11947000" />
       <workItem from="1564561249486" duration="7681000" />
-      <workItem from="1564569022664" duration="4801000" />
+      <workItem from="1564569022664" duration="6170000" />
     </task>
     <task id="LOCAL-00001" summary="本地能跑">
       <created>1562914783696</created>

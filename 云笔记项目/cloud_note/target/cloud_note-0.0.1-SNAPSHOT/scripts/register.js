@@ -1,5 +1,6 @@
 $(function(){
     $("#register").click(function(){
+    	console.log("mmp");
         register();
     });
 });
@@ -7,6 +8,7 @@ $(function(){
 //注册
 function register() {
 	// 取值
+	console.log("mmp2");
 	var userName = $("#regist_username").val();
 	var password = $("#regist_password").val();
 	var password2 = $("#final_password").val();
@@ -15,7 +17,7 @@ function register() {
 	var reg = /^\w{3,20}$/;
 	if(!reg.test(userName)) {
 		$("#warning_1").text("3-20位的英文、数字、下划线.").show();
-		return;
+		
 	} else {
 		$("#warning_1").hide();
 	}
@@ -36,6 +38,7 @@ function register() {
 		dataType:"json",
 		data:user,
 		success:function(result) {
+			console.log(result);
 			if(result.status==0) {
 					alert("注册成功.");
 					$("#zc").attr("class","sig sig_out");
