@@ -9,5 +9,5 @@ public interface BookService {
 	//根据登录的uid查找笔记本的数据
 	public NoteResult<List<Book>> loadUserBook(String userName);
 	//增加笔记本名称
-	public NoteResult<Book> addBook(String userId,String title);
+	public NoteResult<Book> addBook(String userName,String title);
 }

@@ -33,13 +33,14 @@ public class BookServiceImpl implements BookService {
 		return result;
 	}
 	//增加笔记本事件
-	public NoteResult<Book> addBook(String userId, String title) {
+	public NoteResult<Book> addBook(String userName, String title) {
 		Book book=new Book();
+		User user = userDao.findByName(userName);
 		//增加笔记本id
 		String bookId=NoteUtil.createId();
 		book.setCn_notebook_id(bookId);
 		//增加用户id
-		book.setCn_user_id(userId);
+		book.setCn_user_id(user.getCn_user_id());
 		//增加笔记本名称
 		book.setCn_notebook_name(title);
 		//增加笔记本的类型

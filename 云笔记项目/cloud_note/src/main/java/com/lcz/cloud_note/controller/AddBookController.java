@@ -1,14 +1,13 @@
 package com.lcz.cloud_note.controller;
 
-import javax.annotation.Resource;
-
+import com.lcz.cloud_note.entity.Book;
+import com.lcz.cloud_note.service.BookService;
+import com.lcz.cloud_note.util.NoteResult;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.lcz.cloud_note.entity.Book;
-import com.lcz.cloud_note.service.BookService;
-import com.lcz.cloud_note.util.NoteResult;
+import javax.annotation.Resource;
 
 @Controller
 @RequestMapping("/book")
@@ -17,8 +16,9 @@ public class AddBookController {
 	private BookService bookService;
 	@RequestMapping("/add.do")
 	@ResponseBody
-	public NoteResult<Book> execute(String userId,String title){
-		NoteResult<Book> result = bookService.addBook(userId, title);
+	public NoteResult<Book> execute(String userName,String title){
+		System.out.println(userName+","+title);
+		NoteResult<Book> result = bookService.addBook(userName, title);
 		return result;
 	}
 }

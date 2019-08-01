@@ -6,10 +6,12 @@
         <link rel="stylesheet" href="styles/edit.css" />
         <link rel="stylesheet" href="editor.md/examples/css/style.css" />
         <link rel="stylesheet" href="editor.md/css/editormd.css" />
+        <link rel="stylesheet" type="text/css" href="styles/xcConfirm.css"/>
         <script type="text/javascript" src="scripts/common/jquery.min.js"></script>
         <script type="text/javascript" src="scripts/cookie.js"></script>
         <script type="text/javascript" src="scripts/edit.js"></script>
         <script type="text/javascript" src="scripts/base.js"></script>
+        <script src="scripts/xcConfirm.js" type="text/javascript" charset="utf-8"></script>
     </head>
     <body>
         <div id="layout">
@@ -30,11 +32,10 @@
                 </div>
             </header>
             <div class="center">
-                <div id="can"></div>
                 <div class="noteBook">
                     <div class="noteBook-top">
                         <h3>笔记本</h3>
-                        <img src="images/add.svg" id="add_noteBook" height="20px;" width="20px">
+                        <img src="images/add.svg" id="btn1" height="20px;" width="20px">
                     </div>
                     <div class="noteBook-item">
                         <ul>
@@ -44,13 +45,10 @@
                 <div class="notes">
                     <div class="notes-top">
                         <h3>笔记</h3>
-                        <img src="images/add.svg" id="add_note" height="20px;" width="20px" style="margin-bottom: 5px;">
+                        <img src="images/add.svg" id="btn2" height="20px;" width="20px" style="margin-bottom: 5px;">
                     </div>
                     <div class="note-item">
                         <ul>
-                            <li class="item-note">
-                                <a>2019/7/31</a>
-                            </li>
                         </ul>
                     </div>
                 </div>
