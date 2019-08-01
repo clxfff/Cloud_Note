@@ -17,7 +17,7 @@ function register() {
 	var reg = /^\w{3,20}$/;
 	if(!reg.test(userName)) {
 		$("#warning_1").text("3-20位的英文、数字、下划线.").show();
-		
+
 	} else {
 		$("#warning_1").hide();
 	}
