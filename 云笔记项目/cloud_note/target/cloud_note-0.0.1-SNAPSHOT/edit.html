@@ -1,13 +1,84 @@
-﻿<!DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang="zh">
     <head>
-       <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <title>我的笔记</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="x-pjax-version" content="v173">
-        
+        <meta charset="utf-8" />
+        <title>Cloud Note</title>
+        <link rel="stylesheet" href="styles/edit.css" />
+        <link rel="stylesheet" href="editor.md/examples/css/style.css" />
+        <link rel="stylesheet" href="editor.md/css/editormd.css" />
+        <script type="text/javascript" src="scripts/common/jquery.min.js"></script>
+        <script type="text/javascript" src="scripts/cookie.js"></script>
+        <script type="text/javascript" src="scripts/edit.js"></script>
+        <script type="text/javascript" src="scripts/base.js"></script>
     </head>
     <body>
-        <a href="change_password.html">修改密码</a>
-	</body>		
+        <div id="layout">
+            <header>
+                <div class="header">
+                    <div class="header-logo">
+                        <p class="header-logo-p"><span class="header-logo-Cloud">Cloud</span>Note</p>
+                    </div>
+                    <div class="header-info">
+                        <li class="info-table">
+                            <span id="userName">ys1998</span>
+                            <ul class="info-list">
+                                <li id="changePassword">修改密码</li>
+                                <li id="logout">注销</li>
+                            </ul>
+                        </li>
+                    </div>
+                </div>
+            </header>
+            <div class="center">
+                <div id="can"></div>
+                <div class="noteBook">
+                    <div class="noteBook-top">
+                        <h3>笔记本</h3>
+                        <img src="images/add.svg" id="add_noteBook" height="20px;" width="20px">
+                    </div>
+                    <div class="noteBook-item">
+                        <ul>
+                        </ul>
+                    </div>
+                </div>
+                <div class="notes">
+                    <div class="notes-top">
+                        <h3>笔记</h3>
+                        <img src="images/add.svg" id="add_note" height="20px;" width="20px" style="margin-bottom: 5px;">
+                    </div>
+                    <div class="note-item">
+                        <ul>
+                            <li class="item-note">
+                                <a>2019/7/31</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="editormd">
+                    <textarea style="display:none;">在这里输入内容
+</textarea>
+                </div>
+            </div>
+        </div>
+        <script src="editor.md/examples/js/jquery.min.js"></script>
+        <script src="editor.md/editormd.js"></script>
+        <script type="text/javascript">
+			var testEditor;
+
+            $(function() {
+                Editor = editormd("editormd", {
+                    width           : 900,
+                    height          : 515, 
+                    autoHeight      : false,
+                    path            : "editor.md/lib/",
+                    htmlDecode      : "style,script,iframe", 
+                    tex             : true,
+                    emoji           : true,
+                    taskList        : true,
+                    flowChart       : true, 
+                    sequenceDiagram : true
+                });
+            });
+        </script>
+    </body>
 </html>

@@ -5,6 +5,9 @@
 	<select id="findByUserId" parameterType="string" resultType="com.lcz.cloud_note.entity.Book">
 		select * from cn_notebook where cn_user_id=#{userId} order by cn_notebook_createtime desc
 	</select>
+	<select id="getBookId" parameterType="string" resultType="java.lang.String">
+		select cn_notebook_id from cn_notebook where cn_notebook_name=#{bookName}
+	</select>
 	<insert id="save" parameterType="com.lcz.cloud_note.entity.Book">
 		insert into cn_notebook(
 			cn_notebook_id,

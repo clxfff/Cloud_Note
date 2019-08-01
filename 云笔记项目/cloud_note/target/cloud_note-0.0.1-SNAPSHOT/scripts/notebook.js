@@ -1,28 +1,4 @@
-/***
- * 加载普通笔记本
- */
-function loadNormalNoteBook(){
-	$.ajax({
-		type:"post",
-		url:basePath+"notebook/findNormal.do",
-		dataType:"json",
-		data:{},
-		success:function(result) {
-			if(result.status==0) {
-				var list = result.data;
-				$(list).each(function(){
-					$("#first_side_right ul").append('<li class="online"><a><i class="fa fa-book" title="笔记本" rel="tooltip-bottom"></i> '+this.cn_notebook_name+'<button type="button" class="btn btn-default btn-xs btn_position btn_delete"><i class="fa fa-times"></i></button></a></li>');
-					$('#first_side_right li:last').data('notebook',this);
-				});
-			} else {
-				alert(result.message);
-			}
-		},
-		error:function(xhr,status,error) {
-			alert("请求失败.");
-		}
-	});
-}
+
 
 /***
  * 加载特殊笔记本

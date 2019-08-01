@@ -1,29 +1,30 @@
 package com.lcz.cloud_note.service;
 
-import java.util.List;
-import java.util.Map;
-
-import javax.annotation.Resource;
-
-import org.omg.CosNaming.NamingContextExtPackage.StringNameHelper;
-import org.springframework.stereotype.Service;
-
-
+import com.lcz.cloud_note.dao.BookDao;
 import com.lcz.cloud_note.dao.NoteDao;
 import com.lcz.cloud_note.dao.ShareDao;
 import com.lcz.cloud_note.entity.Note;
-import com.lcz.cloud_note.entity.Share;
 import com.lcz.cloud_note.util.NoteResult;
 import com.lcz.cloud_note.util.NoteUtil;
+import org.springframework.stereotype.Service;
+
+import javax.annotation.Resource;
+import java.util.List;
+import java.util.Map;
 @Service("noteService")//扫描到spring容器里面
 public class NoteServiceImpl implements NoteService {
 	@Resource
 	private NoteDao noteDao;
 	@Resource ShareDao shareDao;
+	@Resource
+	BookDao bookDao;
 	
-	public NoteResult<List<Map>> loadBookNotes(String bookId) {
+	public NoteResult<List<Map>> loadBookNotes(String bookName) {
+
+		String bookId = bookDao.getBookId(bookName);
 		//返回数据集合
 		List<Map> list = noteDao.findByBookId(bookId);
+		System.out.println(list);
 		//构建result
 		NoteResult<List<Map>> result=new NoteResult<List<Map>>();
 		result.setStatus(0);
