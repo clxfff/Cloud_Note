@@ -10,4 +10,8 @@ public interface BookService {
 	public NoteResult<List<Book>> loadUserBook(String userName);
 	//增加笔记本名称
 	public NoteResult<Book> addBook(String userName,String title);
+	//删除笔记本
+	public NoteResult<Object> deleteBook(String bookName);
+
+	public NoteResult<Object> updateNoteBook(String bookName,String oldBookName);
 }

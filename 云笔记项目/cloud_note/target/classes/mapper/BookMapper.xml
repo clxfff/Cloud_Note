@@ -8,6 +8,14 @@
 	<select id="getBookId" parameterType="string" resultType="java.lang.String">
 		select cn_notebook_id from cn_notebook where cn_notebook_name=#{bookName}
 	</select>
+	<delete id="delBook" parameterType="String">
+		delete from cn_notebook where cn_notebook_id=#{bookId}
+	</delete>
+	<update id="updateBookName" parameterType="com.lcz.cloud_note.entity.Book">
+		update cn_notebook set
+		cn_notebook_name=#{cn_notebook_name}
+		where cn_notebook_id=#{cn_notebook_id}
+	</update>
 	<insert id="save" parameterType="com.lcz.cloud_note.entity.Book">
 		insert into cn_notebook(
 			cn_notebook_id,

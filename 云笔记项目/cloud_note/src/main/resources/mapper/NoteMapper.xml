@@ -5,12 +5,21 @@
 	<select id="findByBookId" parameterType="string" resultType="Map">
 		select cn_note_id,cn_note_title from cn_note where cn_notebook_id=#{bookId} and cn_note_status_id='1' 
 	</select>
+	<select id="findByNoteName" parameterType="String" resultType="com.lcz.cloud_note.entity.Note">
+		select * from cn_note where cn_note_title=#{noteName}
+	</select>
 	<select id="findByNoteId" parameterType="String" resultType="com.lcz.cloud_note.entity.Note">
 		select *from cn_note where cn_note_id=#{noteId}
 	</select>
 	<update id="updateNote" parameterType="com.lcz.cloud_note.entity.Note">
-		update cn_note set cn_note_title=#{cn_note_title},
+		update cn_note set
 		cn_note_body=#{cn_note_body},
+		cn_note_last_modify_time=#{cn_note_last_modify_time}
+		where cn_note_id=#{cn_note_id}
+	</update>
+	<update id="updateNoteTitle" parameterType="com.lcz.cloud_note.entity.Note">
+		update cn_note set
+		cn_note_title=#{cn_note_title},
 		cn_note_last_modify_time=#{cn_note_last_modify_time}
 		where cn_note_id=#{cn_note_id}
 	</update>
@@ -63,6 +72,13 @@
 		</set>
 		where cn_note_id=#{cn_note_id}
 	</update>
+
+	<delete id="delNote" parameterType="String">
+		delete from cn_note where cn_note_id=#{noteId}
+	</delete>
+	<delete id="delAllNote" parameterType="String">
+		delete from cn_note where cn_notebook_id=#{bookId}
+	</delete>
 </mapper>
 
 

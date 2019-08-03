@@ -3,7 +3,9 @@ package com.lcz.cloud_note.service;
 import com.lcz.cloud_note.dao.BookDao;
 import com.lcz.cloud_note.dao.NoteDao;
 import com.lcz.cloud_note.dao.ShareDao;
+import com.lcz.cloud_note.dao.UserDao;
 import com.lcz.cloud_note.entity.Note;
+import com.lcz.cloud_note.entity.User;
 import com.lcz.cloud_note.util.NoteResult;
 import com.lcz.cloud_note.util.NoteUtil;
 import org.springframework.stereotype.Service;
@@ -18,6 +20,8 @@ public class NoteServiceImpl implements NoteService {
 	@Resource ShareDao shareDao;
 	@Resource
 	BookDao bookDao;
+	@Resource
+	UserDao userDao;
 	
 	public NoteResult<List<Map>> loadBookNotes(String bookName) {
 
@@ -34,9 +38,9 @@ public class NoteServiceImpl implements NoteService {
 	}
 	
 	//单击笔记,加载笔记相关信息
-	public NoteResult<Note> loadNote(String noteId) {
+	public NoteResult<Note> loadNote(String noteName) {
 		//返回数据集合
-		Note note = noteDao.findByNoteId(noteId);
+		Note note = noteDao.findByNoteName(noteName);
 		//构建result
 		NoteResult<Note> result = new NoteResult<Note>();
 		if(note==null) {
@@ -47,17 +51,18 @@ public class NoteServiceImpl implements NoteService {
 			result.setStatus(0);
 			result.setMsg("加载笔记信息成功");
 			result.setData(note);
+			System.out.println(note);
 			return result;
 		}	
 		
 	}
 	
 	//更新笔记信息（保存笔记）事件
-	public NoteResult<Object> updateNote(String noteId, String title, String body) {
+	public NoteResult<Object> updateNote(String noteName, String body) {
+		String noteId = noteDao.findByNoteName(noteName).getCn_note_id();
 		//创建note参数
 		Note note=new Note();
 		note.setCn_note_id(noteId);
-		note.setCn_note_title(title);
 		note.setCn_note_body(body);
 		long time = System.currentTimeMillis();
 		note.setCn_note_last_modify_time(time);
@@ -75,11 +80,37 @@ public class NoteServiceImpl implements NoteService {
 			return result;
 		}
 	}
+	//修改笔记标题事件
+	public NoteResult<Object> updateNoteTitle(String noteName,String title){
+		String noteId = noteDao.findByNoteName(noteName).getCn_note_id();
+		//创建note参数
+		Note note=new Note();
+		note.setCn_note_id(noteId);
+		note.setCn_note_title(title);
+		long time = System.currentTimeMillis();
+		note.setCn_note_last_modify_time(time);
+		//更新数据库记录
+		int rows = noteDao.updateNoteTitle(note);
+		//构建result
+		NoteResult<Object> result = new NoteResult<Object>();
+		if(rows==1) {
+			result.setStatus(0);
+			result.setMsg("修改笔记标题成功");
+			return result;
+		}else {
+			result.setStatus(1);
+			result.setMsg("修改笔记标题失败");
+			return result;
+		}
+	}
 	//增加笔记事件
-	public NoteResult<Note> addNote(String userId, String bookId, String title) {
+	public NoteResult<Note> addNote(String userName, String bookName, String title) {
+
+		User user = userDao.findByName(userName);
+		String bookId = bookDao.getBookId(bookName);
 		Note note=new Note();
 		//用户ID
-		note.setCn_user_id(userId);
+		note.setCn_user_id(user.getCn_user_id());
 		//笔记本ID
 		note.setCn_notebook_id(bookId);
 		//笔记本标题
@@ -106,12 +137,12 @@ public class NoteServiceImpl implements NoteService {
 		return result;
 	}
 	//删除笔记事件
-	public NoteResult deleteNote(String noteId) {
+	public NoteResult deleteNote(String noteName) {
+		String noteId = noteDao.findByNoteName(noteName).getCn_note_id();
 		Note note = new Note();
 		note.setCn_note_id(noteId);
-		note.setCn_note_status_id("2");
 		//更新操作
-		int rows = noteDao.dynamicUpdate(note);
+		int rows = noteDao.delNote(noteId);
 		//创建返回结果
 		NoteResult result = new NoteResult();
 		if(rows >= 1){//成功

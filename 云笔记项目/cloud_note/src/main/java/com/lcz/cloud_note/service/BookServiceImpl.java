@@ -2,6 +2,7 @@ package com.lcz.cloud_note.service;
 
 
 import com.lcz.cloud_note.dao.BookDao;
+import com.lcz.cloud_note.dao.NoteDao;
 import com.lcz.cloud_note.dao.UserDao;
 import com.lcz.cloud_note.entity.Book;
 import com.lcz.cloud_note.entity.User;
@@ -19,6 +20,8 @@ public class BookServiceImpl implements BookService {
 	BookDao bookDao;
 	@Resource
 	UserDao userDao;
+	@Resource
+	NoteDao noteDao;
 	//根据登录的uid查找笔记本的数据
 	public NoteResult<List<Book>> loadUserBook(String userName) {
 		//接受结果
@@ -55,6 +58,31 @@ public class BookServiceImpl implements BookService {
 		result.setStatus(0);
 		result.setMsg("创建笔记本成功");
 		result.setData(book);
+		return result;
+	}
+
+	//删除笔记本
+	public NoteResult<Object> deleteBook(String bookName) {
+		String bookId = bookDao.getBookId(bookName);
+		noteDao.delAllNote(bookId);
+		bookDao.delBook(bookId);
+
+		NoteResult<Object> result = new NoteResult<Object>();
+		result.setStatus(0);
+		result.setMsg("创建笔记本成功");
+		return result;
+	}
+
+	public NoteResult<Object> updateNoteBook(String bookName,String oldBookName) {
+		String bookId = bookDao.getBookId(oldBookName);
+		Book book = new Book();
+		book.setCn_notebook_id(bookId);
+		book.setCn_notebook_name(bookName);
+		System.out.println(book.getCn_notebook_id());
+		bookDao.updateBookName(book);
+		NoteResult<Object> result = new NoteResult<Object>();
+		result.setStatus(0);
+		result.setMsg("修改笔记本名成功");
 		return result;
 	}
 

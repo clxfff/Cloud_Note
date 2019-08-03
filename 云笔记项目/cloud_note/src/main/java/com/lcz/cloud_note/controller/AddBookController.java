@@ -21,4 +21,11 @@ public class AddBookController {
 		NoteResult<Book> result = bookService.addBook(userName, title);
 		return result;
 	}
+
+	@RequestMapping("/deleteBook.do")
+	@ResponseBody
+	public NoteResult<Object> deleteBook(String bookName){
+		NoteResult<Object> result = bookService.deleteBook(bookName);
+		return result;
+	}
 }

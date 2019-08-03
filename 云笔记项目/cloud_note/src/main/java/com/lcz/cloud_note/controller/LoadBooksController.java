@@ -15,12 +15,20 @@ import java.util.List;
 public class LoadBooksController {
 	@Resource
 	private BookService bookService;
-	
+
 	@RequestMapping(value = "/loadBooks.do")
 	@ResponseBody
 	public NoteResult<List<Book>> execute(String userName){
 		System.out.println(userName);
 		NoteResult<List<Book>> result = bookService.loadUserBook(userName);
 		return result;	
+	}
+
+	@RequestMapping("/updateNoteBookTitle.do")
+	@ResponseBody
+	public NoteResult<Object> updateNoteBookTitle(String bookName,String oleBookName){
+		System.out.println(bookName);
+		NoteResult<Object> result = bookService.updateNoteBook(bookName,oleBookName);
+		return result;
 	}
 }

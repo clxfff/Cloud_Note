@@ -12,4 +12,7 @@ public interface BookDao {
 	public String getBookId(String bookName);
 	//增加笔记本的操作
 	public void save(Book book);
+	//删除笔记本
+	public int delBook(String bookId);
+	public int updateBookName(Book book);
 }
