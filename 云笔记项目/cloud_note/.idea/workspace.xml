@@ -8,7 +8,32 @@
   <component name="ChangeListManager">
     <list default="true" id="c5e0ea96-8793-4780-96de-d9fac9dc3a27" name="Default Changelist" comment="Upgrade com.fasterxml.jackson.core:jackson-databind to version 2.9.9 or later">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/change_password.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/change_password.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/alert/alert_delete_like.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/alert/alert_delete_note.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/alert/alert_delete_notebook.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/alert/alert_delete_rollback.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/alert/alert_error.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/alert/alert_like.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/alert/alert_move.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/alert/alert_note.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/alert/alert_notebook.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/alert/alert_rename.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/alert/alert_replay.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/log_in.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/log_in.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cloud_note-0.0.1-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/cloud_note-0.0.1-SNAPSHOT.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cloud_note-0.0.1-SNAPSHOT/alert/alert_delete_like.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cloud_note-0.0.1-SNAPSHOT/alert/alert_delete_note.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cloud_note-0.0.1-SNAPSHOT/alert/alert_delete_notebook.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cloud_note-0.0.1-SNAPSHOT/alert/alert_delete_rollback.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cloud_note-0.0.1-SNAPSHOT/alert/alert_error.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cloud_note-0.0.1-SNAPSHOT/alert/alert_like.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cloud_note-0.0.1-SNAPSHOT/alert/alert_move.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cloud_note-0.0.1-SNAPSHOT/alert/alert_note.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cloud_note-0.0.1-SNAPSHOT/alert/alert_notebook.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cloud_note-0.0.1-SNAPSHOT/alert/alert_rename.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cloud_note-0.0.1-SNAPSHOT/alert/alert_replay.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cloud_note-0.0.1-SNAPSHOT/change_password.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cloud_note-0.0.1-SNAPSHOT/change_password.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cloud_note-0.0.1-SNAPSHOT/log_in.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cloud_note-0.0.1-SNAPSHOT/log_in.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -246,6 +271,8 @@
       <workItem from="1564964643280" duration="113000" />
       <workItem from="1564965578237" duration="177000" />
       <workItem from="1564967757540" duration="1452000" />
+      <workItem from="1565053558040" duration="451000" />
+      <workItem from="1565069520067" duration="2449000" />
     </task>
     <task id="LOCAL-00001" summary="本地能跑">
       <created>1562914783696</created>
